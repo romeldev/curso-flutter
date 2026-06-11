@@ -18,6 +18,7 @@ export default defineConfig({
       { text: 'Inicio', link: '/' },
       { text: 'Módulo 0', link: '/modulo-0/' },
       { text: 'Módulo 1', link: '/modulo-1/' },
+      { text: 'Módulo 2', link: '/modulo-2/' },
       { text: 'DartPad', link: 'https://dartpad.dev' },
     ],
 
@@ -56,8 +57,17 @@ export default defineConfig({
       },
       {
         text: 'Módulo 2: Arquitectura y Setup',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '2.0 Introducción', link: '/modulo-2/' },
+          { text: '2.1 Feature-First Structure', link: '/modulo-2/01-feature-first' },
+          { text: '2.2 Riverpod ProviderScope', link: '/modulo-2/02-riverpod-setup' },
+          { text: '2.3 Configuración de dio', link: '/modulo-2/03-dio-setup' },
+          { text: '2.4 go_router', link: '/modulo-2/04-go-router' },
+          { text: '2.5 freezed + build_runner', link: '/modulo-2/05-freezed' },
+          { text: '2.6 Linting Profesional', link: '/modulo-2/06-linting' },
+          { text: '2.7 Ejercicio Final', link: '/modulo-2/07-ejercicio-final' },
+        ],
       },
       {
         text: 'Módulo 3: Autenticación JWT',

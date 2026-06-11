@@ -53,8 +53,8 @@ features:
 
 - **Módulo 0** ✅ Dart Express — Completado
 - **Módulo 1** ✅ Flutter Fundamentals — Completado
-- **Módulo 2** ⏳ Arquitectura y Setup — Próximamente
-- **Módulo 3** ⏳ Autenticación — Próximamente
+- **Módulo 2** ✅ Arquitectura y Setup — Completado
+- **Módulo 3** ⏳ Autenticación JWT — Próximamente
 - **Módulo 4** ⏳ CRUD de Productos — Próximamente
 - **Módulo 5** ⏳ Navegación Avanzada — Próximamente
 - **Módulo 6** ⏳ Testing — Próximamente
