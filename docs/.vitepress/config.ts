@@ -17,6 +17,7 @@ export default defineConfig({
     nav: [
       { text: 'Inicio', link: '/' },
       { text: 'Módulo 0', link: '/modulo-0/' },
+      { text: 'Módulo 1', link: '/modulo-1/' },
       { text: 'DartPad', link: 'https://dartpad.dev' },
     ],
 
@@ -39,8 +40,19 @@ export default defineConfig({
       },
       {
         text: 'Módulo 1: Flutter Fundamentals',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '1.0 Introducción', link: '/modulo-1/' },
+          { text: '1.1 Widget Tree', link: '/modulo-1/01-widget-tree' },
+          { text: '1.2 StatelessWidget vs StatefulWidget', link: '/modulo-1/02-stateless-vs-stateful' },
+          { text: '1.3 Layout: Row, Column, Stack', link: '/modulo-1/03-layout' },
+          { text: '1.4 ListView y GridView', link: '/modulo-1/04-listview' },
+          { text: '1.5 Text, Image, Icon, Button, Card', link: '/modulo-1/05-widgets-ui' },
+          { text: '1.6 Forms y Validación', link: '/modulo-1/06-forms' },
+          { text: '1.7 Navegación Básica', link: '/modulo-1/07-navigation' },
+          { text: '1.8 Theme y Material 3', link: '/modulo-1/08-theme' },
+          { text: '1.9 Ejercicio Final — Catálogo', link: '/modulo-1/09-ejercicio-final' },
+        ],
       },
       {
         text: 'Módulo 2: Arquitectura y Setup',
@@ -75,7 +87,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Curso Flutter con Riverpod + dio + Laravel — 8 módulos, 8-10 semanas',
+      message: 'Curso Flutter con Riverpod + dio + REST APIs — 8 módulos, 8-10 semanas',
       copyright: 'Creado para desarrolladores web migrando a Flutter',
     },
 
