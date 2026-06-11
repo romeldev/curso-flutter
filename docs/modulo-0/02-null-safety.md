@@ -63,9 +63,46 @@ class Config {
     print(apiUrl);  // seguro, porque load() se llamó antes
   }
 }
+
+// Uso práctico:
+void main() {
+  final config = Config();
+
+  // ⚠️ Si llamaras config.usar() AQUÍ, crashea porque apiUrl no está inicializada
+
+  config.load();  // ✅ apiUrl queda asignada
+
+  config.usar();  // ✅ Imprime: https://api.miapp.com
+  print(config.apiUrl);  // ✅ También funciona, ya tiene valor
+}
 ```
 
 **Casos de uso real**: controladores, dependencias circulares, lazy initialization.
+
+**Patrón típico en Flutter**: cargar configuración remota o de assets antes de que la app renderice.
+
+```dart
+class AppConfig {
+  late final String apiUrl;
+  late final String apiKey;
+  late final bool analyticsEnabled;
+
+  Future<void> loadFromAssets() async {
+    final data = await rootBundle.loadString('assets/config.json');
+    final json = jsonDecode(data) as Map<String, dynamic>;
+    apiUrl = json['api_url'] as String;
+    apiKey = json['api_key'] as String;
+    analyticsEnabled = json['analytics'] as bool;
+  }
+}
+
+// En main.dart:
+Future<void> main() async {
+  final appConfig = AppConfig();
+  await appConfig.loadFromAssets();
+  runApp(MyApp(config: appConfig));
+}
+```
 
 ## required — parámetros obligatorios
 
