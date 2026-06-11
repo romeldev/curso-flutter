@@ -19,6 +19,7 @@ export default defineConfig({
       { text: 'Módulo 0', link: '/modulo-0/' },
       { text: 'Módulo 1', link: '/modulo-1/' },
       { text: 'Módulo 2', link: '/modulo-2/' },
+      { text: 'Módulo 3', link: '/modulo-3/' },
       { text: 'DartPad', link: 'https://dartpad.dev' },
     ],
 
@@ -71,8 +72,19 @@ export default defineConfig({
       },
       {
         text: 'Módulo 3: Autenticación JWT',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '3.0 Introducción', link: '/modulo-3/' },
+          { text: '3.1 API Endpoints', link: '/modulo-3/01-api-endpoints' },
+          { text: '3.2 Auth Repository', link: '/modulo-3/02-auth-repository' },
+          { text: '3.3 flutter_secure_storage', link: '/modulo-3/03-secure-storage' },
+          { text: '3.4 AuthProvider con Riverpod', link: '/modulo-3/04-auth-provider' },
+          { text: '3.5 Pantalla de Login', link: '/modulo-3/05-login-page' },
+          { text: '3.6 Manejo de Errores HTTP', link: '/modulo-3/06-error-handling' },
+          { text: '3.7 go_router Redirect', link: '/modulo-3/07-router-redirect' },
+          { text: '3.8 Cerrar Sesión', link: '/modulo-3/08-logout' },
+          { text: '3.9 Ejercicio Final', link: '/modulo-3/09-ejercicio-final' },
+        ],
       },
       {
         text: 'Módulo 4: CRUD de Productos',
