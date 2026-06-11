@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Curso Flutter',
-  description: 'Aprende Flutter con Riverpod, dio y Laravel — para devs web migrando a mobile',
+  description: 'Aprende Flutter con Riverpod, dio y REST APIs — para devs web migrando a mobile',
   lang: 'es',
   base: '/curso-flutter/',
 
@@ -48,7 +48,7 @@ export default defineConfig({
         items: [{ text: 'Próximamente...', link: '' }],
       },
       {
-        text: 'Módulo 3: Autenticación con Laravel Sanctum',
+        text: 'Módulo 3: Autenticación JWT',
         collapsed: true,
         items: [{ text: 'Próximamente...', link: '' }],
       },

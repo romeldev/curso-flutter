@@ -1,7 +1,7 @@
 {
   "name": "flutter-curso",
   "version": "1.0.0",
-  "description": "Curso Flutter con Riverpod + dio + Laravel",
+  "description": "Curso Flutter con Riverpod + dio + REST APIs",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",

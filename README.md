@@ -1,8 +1,8 @@
-# Curso Flutter: Riverpod + dio + Laravel
+# Curso Flutter: Riverpod + dio + REST APIs
 
 **Perfil de entrada**: Desarrollador web migrando a Flutter
 **Stack**: Riverpod + dio + freezed + go_router + flutter_secure_storage
-**Backend**: Laravel API (Sanctum)
+**Backend**: API REST (cualquier lenguaje/servicio)
 **App final**: Sistema de inventario/productos con autenticación
 
 ---
@@ -58,11 +58,11 @@
 
 ---
 
-## Módulo 3 — Autenticación con Laravel Sanctum (1.5 semanas)
+## Módulo 3 — Autenticación con JWT (1.5 semanas)
 
 | Tema | Qué construimos |
 |---|---|
-| 3.1 API Laravel: estructura de endpoints | Vistazo rápido al backend |
+| 3.1 API endpoints: login, register, me, logout | Vistazo rápido a la estructura REST |
 | 3.2 dio interceptor para adjuntar token | AuthInterceptor |
 | 3.3 flutter_secure_storage: guardar/leer/borrar token | Sesión persistente |
 | 3.4 Riverpod: AuthProvider con FutureProvider | Estado de autenticación global |
@@ -71,7 +71,7 @@
 | 3.7 go_router redirect: proteger rutas | Si no hay token → login |
 | 3.8 Cerrar sesión: limpiar token + redirigir | Logout funcional |
 
-**Mini-ejemplo**: Login funcional contra Laravel, sesión persistente, ruteo protegido
+**Mini-ejemplo**: Login funcional, sesión persistente, ruteo protegido
 
 ---
 
@@ -87,10 +87,10 @@
 | 4.6 Crear producto: formulario + POST | POST /api/products |
 | 4.7 Actualizar producto: precargar datos + PUT | PUT /api/products/{id} |
 | 4.8 Eliminar producto: confirmación + DELETE | DELETE /api/products/{id} |
-| 4.9 Paginación (si Laravel devuelve paginados) | Carga infinita o botones |
+| 4.9 Paginación | Carga infinita o botones |
 | 4.10 Manejo de imágenes (si aplica) | image_picker + FormData |
 
-**Mini-ejemplo**: CRUD completo funcional contra Laravel
+**Mini-ejemplo**: CRUD completo funcional
 
 ---
 
@@ -141,7 +141,7 @@ M1: Flutter Fundamentals (1 sem)
 M2: Arquitectura + Setup (2 días)
   │
   ▼
-M3: Autenticación (1.5 sem)  ← Login contra Laravel
+M3: Autenticación (1.5 sem)  ← Login con JWT
   │
   ▼
 M4: CRUD Productos (2 sem)   ← El plato fuerte
@@ -169,7 +169,7 @@ M7: Polish + Deploy (3-4 días)
 | Modelos inmutables | freezed + json_serializable |
 | Navegación | go_router |
 | Seguridad local | flutter_secure_storage |
-| Backend API | Laravel con Sanctum |
+| Backend API | REST API (cualquier lenguaje) |
 | Codegen | build_runner |
 | Linting | very_good_analysis |
 | Testing | flutter_test + mocktail |
