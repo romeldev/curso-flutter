@@ -20,6 +20,7 @@ export default defineConfig({
       { text: 'Módulo 1', link: '/modulo-1/' },
       { text: 'Módulo 2', link: '/modulo-2/' },
       { text: 'Módulo 3', link: '/modulo-3/' },
+      { text: 'Módulo 4', link: '/modulo-4/' },
       { text: 'DartPad', link: 'https://dartpad.dev' },
     ],
 
@@ -88,8 +89,21 @@ export default defineConfig({
       },
       {
         text: 'Módulo 4: CRUD de Productos',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '4.0 Introducción', link: '/modulo-4/' },
+          { text: '4.1 Modelos con freezed', link: '/modulo-4/01-modelos' },
+          { text: '4.2 ProductRepository', link: '/modulo-4/02-repository' },
+          { text: '4.3 Providers con Riverpod', link: '/modulo-4/03-providers' },
+          { text: '4.4 Pantalla de Listado', link: '/modulo-4/04-listado' },
+          { text: '4.5 Pull-to-Refresh', link: '/modulo-4/05-pull-to-refresh' },
+          { text: '4.6 Crear Producto', link: '/modulo-4/06-crear' },
+          { text: '4.7 Editar Producto', link: '/modulo-4/07-editar' },
+          { text: '4.8 Eliminar Producto', link: '/modulo-4/08-eliminar' },
+          { text: '4.9 Paginación', link: '/modulo-4/09-paginacion' },
+          { text: '4.10 Imágenes', link: '/modulo-4/10-imagenes' },
+          { text: '4.11 Ejercicio Final', link: '/modulo-4/11-ejercicio-final' },
+        ],
       },
       {
         text: 'Módulo 5: Navegación Avanzada con go_router',
