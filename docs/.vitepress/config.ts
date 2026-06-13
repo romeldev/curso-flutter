@@ -22,6 +22,8 @@ export default defineConfig({
       { text: 'Módulo 3', link: '/modulo-3/' },
       { text: 'Módulo 4', link: '/modulo-4/' },
       { text: 'Módulo 5', link: '/modulo-5/' },
+      { text: 'Módulo 6', link: '/modulo-6/' },
+      { text: 'Módulo 7', link: '/modulo-7/' },
       { text: 'DartPad', link: 'https://dartpad.dev' },
     ],
 
@@ -121,13 +123,29 @@ export default defineConfig({
       },
       {
         text: 'Módulo 6: Testing',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '6.0 Introducción', link: '/modulo-6/' },
+          { text: '6.1 Unit Tests con Riverpod', link: '/modulo-6/01-unit-tests' },
+          { text: '6.2 Mocktail', link: '/modulo-6/02-mocktail' },
+          { text: '6.3 Widget Tests', link: '/modulo-6/03-widget-tests' },
+          { text: '6.4 Integration Tests', link: '/modulo-6/04-integration-tests' },
+          { text: '6.5 Ejercicio Final', link: '/modulo-6/05-ejercicio-final' },
+        ],
       },
       {
         text: 'Módulo 7: Polish y Producción',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '7.0 Introducción', link: '/modulo-7/' },
+          { text: '7.1 Splash Screen', link: '/modulo-7/01-splash' },
+          { text: '7.2 Icono de App', link: '/modulo-7/02-icono' },
+          { text: '7.3 Manejo Global de Errores', link: '/modulo-7/03-error-handling' },
+          { text: '7.4 Build Modes', link: '/modulo-7/04-build-modes' },
+          { text: '7.5 Firma de APK', link: '/modulo-7/05-firma' },
+          { text: '7.6 CI/CD', link: '/modulo-7/06-cicd' },
+          { text: '7.7 Ejercicio Final', link: '/modulo-7/07-ejercicio-final' },
+        ],
       },
     ],
 
