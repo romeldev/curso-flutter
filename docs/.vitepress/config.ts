@@ -21,6 +21,7 @@ export default defineConfig({
       { text: 'Módulo 2', link: '/modulo-2/' },
       { text: 'Módulo 3', link: '/modulo-3/' },
       { text: 'Módulo 4', link: '/modulo-4/' },
+      { text: 'Módulo 5', link: '/modulo-5/' },
       { text: 'DartPad', link: 'https://dartpad.dev' },
     ],
 
@@ -107,8 +108,16 @@ export default defineConfig({
       },
       {
         text: 'Módulo 5: Navegación Avanzada con go_router',
-        collapsed: true,
-        items: [{ text: 'Próximamente...', link: '' }],
+        collapsed: false,
+        items: [
+          { text: '5.0 Introducción', link: '/modulo-5/' },
+          { text: '5.1 ShellRoute', link: '/modulo-5/01-shellroute' },
+          { text: '5.2 Rutas Anidadas', link: '/modulo-5/02-rutas-anidadas' },
+          { text: '5.3 Deep Linking', link: '/modulo-5/03-deep-linking' },
+          { text: '5.4 Transiciones', link: '/modulo-5/04-transiciones' },
+          { text: '5.5 Guardas por Rol', link: '/modulo-5/05-guardas' },
+          { text: '5.6 Ejercicio Final', link: '/modulo-5/06-ejercicio-final' },
+        ],
       },
       {
         text: 'Módulo 6: Testing',
